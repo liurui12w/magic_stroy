@@ -1,0 +1,16 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 20
+  username: root
+  password: root
+
+development:
+  <<: *default
+  database: magic_stroy_development
+
+production:
+  <<: *default
+  database: magic_stroy_production
+  username: root
+  password: root
