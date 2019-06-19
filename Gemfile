@@ -71,6 +71,7 @@ gem 'simple_token_authentication'
 gem 'activeadmin', '>= 1.1'
 gem 'activeadmin_addons' #集成一些很棒的select
 gem 'active_admin_datetimepicker' #时间筛选
+gem 'activeadmin_dynamic_fields' #隐藏字段
 
 gem 'cancancan'
 gem 'draper'
