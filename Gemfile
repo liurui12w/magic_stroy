@@ -76,3 +76,7 @@ gem 'activeadmin_dynamic_fields' #隐藏字段
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
+
+gem 'discard', '~> 1.0' #软删除
+gem 'kaminari' #分页
+gem 'ransack'

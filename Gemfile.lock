@@ -119,6 +119,8 @@ GEM
       railties (>= 4.1.0, < 6.0)
       responders
       warden (~> 1.2.3)
+    discard (1.1.0)
+      activerecord (>= 4.2, < 7)
     draper (3.1.0)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
@@ -324,8 +326,10 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  discard (~> 1.0)
   draper
   jbuilder (~> 2.5)
+  kaminari
   listen (>= 3.0.5, < 3.2)
   mysql2
   pry-rails
@@ -333,6 +337,7 @@ DEPENDENCIES
   pundit
   rack-cors
   rails (~> 5.2.3)
+  ransack
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_token_authentication

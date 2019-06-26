@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_11_022852) do
+ActiveRecord::Schema.define(version: 2019_06_19_043940) do
 
   create_table "active_admin_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "namespace"
@@ -55,6 +55,16 @@ ActiveRecord::Schema.define(version: 2019_06_11_022852) do
     t.boolean "is_all_day", default: false, comment: "是否一整天"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "tripdata", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "title"
+    t.string "place"
+    t.string "remark"
+    t.string "url"
+    t.string "price"
+    t.string "second_name"
+    t.string "third_name"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
