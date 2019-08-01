@@ -6,8 +6,12 @@ Rails.application.routes.draw do
 
 
   namespace :api, defaults: { format: :json } do
+    post '/sign_in', to: 'users#create'
+    post '/sign_out', to: 'users#sign_out'
+
     resources :schedules
     resources :carousels
+
   end
 
 end

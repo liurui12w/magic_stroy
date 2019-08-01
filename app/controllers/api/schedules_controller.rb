@@ -1,4 +1,4 @@
-class Api::SchedulesController < ApplicationController
+class Api::SchedulesController < Api::ApplicationController
   before_action :authenticate_user!
   before_action :set_schedule, only: [:show, :update, :destroy]
 

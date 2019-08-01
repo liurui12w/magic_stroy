@@ -65,16 +65,6 @@ ActiveRecord::Schema.define(version: 2019_07_24_075722) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "tripdata", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "title"
-    t.string "place"
-    t.string "remark"
-    t.string "url"
-    t.string "price"
-    t.string "second_name"
-    t.string "third_name"
-  end
-
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "email", default: ""
     t.string "username", default: "", null: false

@@ -1,4 +1,4 @@
-class Api::CarouselsController < ApplicationController
+class Api::CarouselsController < Api::ApplicationController
 
   def index
     optional! :page, default: 1
