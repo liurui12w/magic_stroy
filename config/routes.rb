@@ -11,7 +11,12 @@ Rails.application.routes.draw do
 
     resources :schedules
     resources :carousels
+    resources :users do
+       collection do
+         post :update_info
+       end
+    end
+
 
   end
-
 end
